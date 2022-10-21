@@ -10,6 +10,7 @@
 
   nav{
     display: grid;
+    height: 4rem;
     justify-content: center;
     justify-items: center;
     grid-template-columns: 1fr 4fr 2fr ;
@@ -18,10 +19,10 @@
     background: #fff;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
-    height: 4rem;
-
   }
   nav a, nav span{
     margin-right: 1rem;
@@ -156,6 +157,55 @@
   } 
   /******END OF NAV *****/
 
+  .hero--section{
+    max-width: 100%;
+    height: 100vh;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/landing-page/home001.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+    margin: 3rem 8rem;
+  }
+  
+  .hero--section-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    flex-direction: row-reverse;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+  }
+
+  .hero--sect--desc{
+    width: 70%;
+    line-height: 2;
+  }
+
+  .herobtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .herobtn button{
+    background-color: #2a2ae4;
+    color: #fff;
+    padding: 0.4rem 0.6rem;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
 
 
 
@@ -176,4 +226,8 @@
          .nav-links-small-screen{
            display: flex;
          }
+
+         .hero--section{
+          margin: 1rem 0.1rem;
+        }
   }
